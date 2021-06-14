@@ -368,7 +368,7 @@ end
 
 -- This mod doesn't work properly in the Chaos Wastes (known as "deus" mode in the game source).
 local function is_in_chaos_wastes()
-	return (Managers.state.game_mode:game_mode_key() == "deus")
+	return (Managers.mechanism:current_mechanism_name() == "deus")
 end
 
 -- Hook IngamePlayerListUI.update_widgets to set a flag indicating we need to update our widgets.
